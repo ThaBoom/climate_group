@@ -16,7 +16,7 @@ import voluptuous as vol
 
 from homeassistant.core import State, callback
 from homeassistant.components import climate
-from homeassistant.const import (STATE_UNKNOWN, ATTR_ENTITY_ID, ATTR_TEMPERATURE, TEMP_CELSIUS,
+from homeassistant.const import (STATE_UNKNOWN, ATTR_ENTITY_ID, ATTR_TEMPERATURE, TEMP_FAHRENHEIT,
                                  CONF_ENTITIES, CONF_NAME, STATE_UNAVAILABLE,
                                  ATTR_SUPPORTED_FEATURES)
 from homeassistant.helpers.event import async_track_state_change
@@ -143,7 +143,7 @@ class ClimateGroup(ClimateDevice):
     @property
     def temperature_unit(self):
         """Return the unit of measurement that is used."""
-        return TEMP_CELSIUS
+        return TEMP_FAHRENHEIT
 
     @property
     def should_poll(self) -> bool:
