@@ -1,6 +1,6 @@
 {
   "domains": ["climate"],
-  "name": "Climate Group",
+  "name": "Climate Grouptest",
   "render_readme": true,
   "homeassistant": "0.96.0"
 }
